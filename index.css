@@ -1,0 +1,207 @@
+body{
+	background: rgb(5, 7, 12);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+header{
+	text-align: center;
+	color: rgb(255, 255, 255); 
+}
+h2,h3{
+	display: inline;
+	color: rgb(255, 255, 255);
+}
+span{
+	font-size: larger;
+	color: rgb(168, 168, 158);
+}
+hr{
+	border: 1px solid rgb(224, 133, 48);
+}
+#vl{
+	display: inline;
+	position: fixed;
+	top: 320px;
+	left: 170px;
+	height: 250px;
+	width: 0px;
+	border: 1px solid rgb(224, 133, 48);
+}
+#lefttop{
+	display:flex;
+	position: fixed;
+	top: 230px;
+	left: 20px;
+	height: 60px;
+	width: 400px;
+	border: 1px solid rgb(224, 133, 48);
+	color: rgb(204, 70, 70);
+	font-size: 36px;
+	font-weight: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#left{
+	display: inline;
+	position: fixed;
+	top: 300px;
+	left: 20px;
+	height: 330px;
+	width: 400px;
+	border: 1px solid rgb(224, 133, 48);
+}
+#right{
+	display: inline;
+	position: fixed;
+	top: 230px;
+	left: 480px;
+	height: 400px;
+	width: 870px;
+	border: 1px solid rgb(6, 23, 97);
+	background: black;
+	overflow: hidden;
+}
+#yaxis{
+	display: inline;
+	position: fixed;
+	top: 220px;
+	left: 442px;
+	height: 420px;
+	width: 30px;
+	/*background: red;*/
+	line-height: 245%;
+	color:  rgb(6, 23, 97);
+	font-weight: bold;
+}
+.leftheading{
+	color: white;
+	font-size: 27px;
+	font-weight: 10px;
+	font-stretch: expanded;
+}
+#length{
+	position: fixed;
+	top: 320px;/*300 + 0*55 +20*/
+	left: 40px;
+}
+#speed{
+	position: fixed;
+	top: 375px;/*300 + 1*55 + 20*/
+	left: 55px;
+}
+#limit{
+	position: fixed;
+	top: 430px;/*300 + 2*55 + 20*/
+	left: 74px;
+}
+#data{
+	position: fixed;
+	top: 485px;/*300 + 3*55 + 20*/
+	left: 72px;
+}
+#algo{
+	position: fixed;
+	top: 540px;/*300 + 4*55 + 20*/
+	left: 67px;
+}
+.box{
+	width: 40px;
+	height: 22px;
+	background: rgb(5, 7, 12);
+	border: 2px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	color: white;
+	font-size: 19px;
+}
+#lengthbox{
+	position: fixed;
+	top: 320px;/*300 + 0*55 +20*/
+	left: 190px;
+}
+#lengthrange{
+	position: fixed;
+	top: 325px;/*300 + 0*55 +20*/
+	left: 260px;
+}
+#speedbox{
+	position: fixed;
+	top: 375px;/*300 + 0*55 +20*/
+	left: 190px;
+}
+#speedrange{
+	position: fixed;
+	top: 380px;/*300 + 0*55 +20*/
+	left: 260px;
+}
+#limitbox{
+	position: fixed;
+	top: 435px;/*300 + 0*55 +20*/
+	left: 190px;
+}
+#limitrange{
+	position: fixed;
+	top: 440px;/*300 + 0*55 +20*/
+	left: 260px;
+}
+#databox{
+	position: fixed;
+	top: 485px;/*300 + 0*55 +20*/
+	left: 190px;
+	width: 140px;
+	height: 22px;
+	background: rgb(5, 7, 12);
+	border: 2px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+}
+#databox::placeholder{
+	columns: rgb(90, 88, 88);
+}
+select{
+	position: fixed;
+	top: 540px;
+	left: 190px;
+	width: 210px;
+	height: 29px;
+	background: rgb(5, 7, 12);
+	border: 2px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	color: green;
+	font-size: 18px;
+}
+option{
+	color: blue;
+}
+#button1{
+	background: rgb(224, 133, 48);
+	border-radius: 4px;
+	color: rgb(229, 226, 226);
+	font-size: 11px;
+	position: fixed;
+	top: 487px;/*300 + 0*55 +20*/
+	left: 338px;
+	width: 60px;
+	height: 24px;
+}
+#button2{
+	background: rgb(224, 133, 48);
+	border-radius: 10px;
+	color: rgb(229, 226, 226);
+	font-size: 20px;
+	position: fixed;
+	top: 580px;
+	left: 190px;
+	width: 210px;
+	height: 35px;
+}
+#author{
+	color: green;
+}
+#authorname{
+	color: red;
+}
+#authorclg{
+	color: blue;
+}
