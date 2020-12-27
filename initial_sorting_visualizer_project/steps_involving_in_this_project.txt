@@ -1,0 +1,69 @@
+1) firstly i made a simple skeleton of my project which i have implemented in sorting_visualizer.txt file
+2) i learned html,css and javascript 4-5 months back so i kind of forget everything so i watched html in one video,css in one video and js in 
+   one video from code with harry youtube channel channel just to remind 
+3) well i didn't go through the whole videos but just grab imp things by skiping some part:)
+4) then i experimented by myself of html,css and js just to get the feel
+5) i had implemented sorting algorithms many times so i didn't need to remind them
+6) finally after several attempts i had done html and css work excluding main animation part and it feels really good and created a basic html 
+   page for my project.
+7) finally i start writing js code
+8) firstly i will relate some functionaly with speed and length selector with their text boxes also algo selection element with upper heading
+9) now i am writing a function startsorting which will get array from inserted array in required form and which algo to use selected by user
+ and will control the animation part 
+10) now i have array stored in a variable ,speed,its length and algo type stored in variable
+11) now first i will write all sorting algorithms which will take array as input and then sort them 
+12 i created all sorting functions  
+13) now i am watching video on how to control graphics using javascript and obvio in one video:)
+14) things starts to getting messy i am facing one problem :(
+15) added lines where you can set zoom as well
+16) now only thing is i need to find to way to show swap animation of two lines
+17) writing swap animation function is little bit tricky
+18) i am stopping here as i have exam tommorow so i will continue from here from tommorow
+19) at first i draw every rectangle using coordinates but there i was facing problem how to show the swaping animation os two rectangles
+   so i decided that i will create a div block for every single rectangle and then it will be easy to manage that swaping animation
+20) i observed during zoom in rectengles are overwriting on other elements so now i corrected by limiting their area on screen
+21) i succeded in adding those div elements and it felt good:) next task is to animate in swapping
+22) now all set only animation are taking place at one time after full array sorted but i need to find to way to show every transition 
+   which is my next task except that function involving swap are working properly ans display on screen is also getting sorted by applying sorted 
+   function
+23) my today's exam is over and it went well:) and now i am resuming my work 
+24) now i am picking color for various states
+25) after tons of experimenting and searching on internet i finally found something effective regarding swaping animation
+26) i am not getting any effective thing about it so a new idea came to my mind i will sort the array and will display the transition later
+27) so i decided i will be storing every transition in a cache and then with the help of set interval javascript function i will show animation
+28) i achieved something finaly i was able able to change color of rectangle by generated cache
+29) finally i did it my display for bubble sort is working fine if array sorted in decreasing order now i need to manage whrere array is not sorted in decreasing order
+30) now i will try something new i will be writing recursive function of bubble sort and will completely sort and display the array with this function only
+31) man js is fun ac in one go i mean recursive code worked in one go 
+32) and now i am writing recursive code for selection sort
+33) selection sort done :) plus i got the feel of this project now code of rest algorithms will be easier
+34) finally insertion sort done it was bit hard to implement for me
+35) now two quicksort and mergesort hard algos left which i will do later now i need to go out with my friends
+36) now insertion sort is working awesome now i will implement quicksort
+37) these two are tricky i really need to think about them carefully how to implement their display version which is understable by seing
+38) i am getting frustated so i will continue tommorow morning and once quicksort done then mergesort will be easy
+39) i am very close to a perfect quicksort function and i have learned a lot by implementing this function
+40) here the point is when you finish one recursive call completely with animation only then you should call next recursive but that is creating a 
+   preoblem here because i need to make two recursive calls here instea of one  and i am trying to solve this problem right now other than
+    that everything has been implemented for this function
+41) i will store every recursive call in an object as its property and when i make a call from this obj i will delete this recursive call property from object
+42) now things are getting really messy everything is working fine except one and i was not able to find that bug but i will carry on my search
+43) man!! sometimes small mistakes lead to hours of brainstorming its just i had used l1 instead of l2 somewhere
+44) i am extremely happy quicksort done perfectly now i am asuming mergesort will hardly take 1hr to code may be more because i am thinking
+   to animate mergesort a little differently which is more complicated than quicksort
+45) it definitely will take more than 1 hr as i am thingking to introduce a completely seprate small window which will help mergesort to display
+46) but first i will have dinner and then play cod for 30 min then i will start implementing this
+47) this one(merge sort) is the hardest to implement i got frustated so i will continue my work from tommorow morning
+48) well merge sort is going to be very complicated for me
+49) man!! merge sort done so easily :) i thought it would be hard to implement and i messed up little with colors but that can be corrected very
+easily 
+50) hurrah!! i have completed this project within 3 days!!
+51) believe me this feels so good 800+ lines of js , 150+ lines of css and 80+ lines of html it was fun
+
+
+now that i have done this project i will be again writing this project but this time i know what mistakes i have made and how much complications
+i have created so i will writing my whole code again with proper naming conventions and seperate js files for different sorting algoeithms
+because in this code i write really big functions which i thing i can reduce now as now i have better understanding
+
+i finally rewrite the whole code which very less complected and very short and best thing is i only took one day to code now its 2 A.M. but
+man first time it feels so good to see my work i hope you will like it

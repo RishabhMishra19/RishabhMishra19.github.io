@@ -1,0 +1,40 @@
+					fun project
+overview - this is a sorting algo visualizer where you can control speed by given buttons as well as 
+	   you can control amount of data .here you may generate random data or may enter your own 
+           data and can see where were you making mistakes(if u r a beginner).
+
+speed - ____________   
+length - _______________ 
+data - random/your data  
+if your data  - enter
+sorting algo - M/B/S/Q/I
+							display window
+			____________________________________________________________________________________________
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|											    |
+			|___________________________________________________________________________________________|
+			
+
+
+
+
+
+
+
+

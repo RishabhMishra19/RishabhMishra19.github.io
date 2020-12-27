@@ -1,0 +1,196 @@
+body{
+	background: rgb(5, 7, 12);
+}
+
+header{
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+h2,h3{
+	display: inline;
+	color: rgb(255, 255, 255);
+}
+span{
+	font-size: larger;
+	font-display: ;
+}
+hr{
+	border: 1px solid rgb(224, 133, 48);
+}
+.overview{
+	color: rgb(168, 168, 158);
+	font-stretch: expanded;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.options{
+	color: rgb(255, 255, 255);
+}
+.tab { 
+	margin-left: 20px; 
+}
+.tab2 { 
+	margin-left: 25px; 
+	margin-right: 20px; 
+}
+.tab3 { 
+	margin-left: 25px; 
+	margin-right: 25px; 
+}
+.tab4 { 
+	margin-left: 16px; 
+	margin-right:22px;
+}
+textarea{
+	font-size: 18px;
+	border-radius: 5px;
+	background: rgb(5, 7, 12);
+	color: rgb(216, 212, 212);
+}
+#select{
+	font-size: 18px;
+	font-weight: normal;
+	border-radius: 5px;
+	background: rgb(5, 7, 12);
+	color: rgb(229, 226, 226);
+}
+#button{
+	margin-left: 223px; 
+	margin-top: 3px;
+	background: rgb(47, 115, 204);
+	border-radius: 5px;
+	color: rgb(229, 226, 226);
+}
+#button:hover{
+	background:rgb(224, 133, 48);
+}
+#button2{
+	margin-left: 90px; 
+	background: rgb(224, 133, 48);
+	border-radius: 5px;
+	color: rgb(229, 226, 226);
+	font-size: 20px;
+}
+#button2:hover{
+	background:rgb(52, 204, 47);
+}
+
+.options{
+	width: 30%;
+	padding-left: 20px;
+	border-radius: 5px;
+	border: 1px solid rgb(224, 133, 48);
+	position: relative;
+	top: 70px;
+}
+.main{
+	position: fixed;
+	left: 430px;
+	top:200px;
+	border-radius: 5px;
+	border: 3px solid rgb(46, 44, 44);
+}
+.sortheading{
+	width: 225px;
+	height: 30px;
+	font-size: 26px;
+	font-weight: 2px;
+	color: rgb(204, 70, 70);
+	border: 3px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	position: fixed;
+	left: 60px;
+	top:230px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+.input{
+	width: 40px;
+	background: rgb(5, 7, 12);
+	border: 3px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	color: white;
+}
+.input2{
+	width: 170px;
+	background: rgb(5, 7, 12);
+	border: 3px solid rgb(46, 44, 44);
+	border-radius: 5px;
+	color: white;
+}
+
+#vernummain{
+	position: fixed;
+	left: 390px;
+	top:200px;
+	width: 30px;
+	height: 400px;
+	color: white;
+}
+#hornummain{
+	position: fixed;
+	left: 430px;
+	top:620px;
+	width: 900px;
+	height: 30px;
+	color: white;
+}
+#v04{
+	position: fixed;
+	top: 200px;
+	left: 390px;
+}
+#v03{
+	position: fixed;
+	top: 300px;
+	left: 390px;
+}
+#v02{
+	position: fixed;
+	top: 400px;
+	left: 390px;
+}
+#v01{
+	position: fixed;
+	top: 500px;
+	left: 390px;
+}
+#v00{
+	position: fixed;
+	top: 600px;
+	left: 390px;
+}
+
+* {
+	box-sizing:border-box;
+  }
+  
+  .left {
+	background-color:#2196F3;
+	padding:20px;
+	float:left;
+	width:20%; /* The width is 20%, by default */
+  }
+  
+  .main {
+	background-color:#f1f1f1;
+	padding:20px;
+	float:left;
+	width:60%; /* The width is 60%, by default */
+  }
+  
+  .right {
+	background-color:#4CAF50;
+	padding:20px;
+	float:left;
+	width:20%; /* The width is 20%, by default */
+  }
+  
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width:800px) {
+	.left, .main, .right {
+	  width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<header><h1>FUN PROJECT</h1></header>
+<title>SORTING_VISUALIZER</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel = "stylesheet"  href="main.css">
+</head>
+<body onload="forstarting();">
+	<hr>
+	<br/>
+
+	<div class="overview">
+	<h2>OVERVIEW - </h2>
+	<span> This is a sorting algo visualizer where you can control speed by given buttons as well as 
+		you can control amount of data .here you may generate random data or may enter your own 
+		data and can see where were you making mistakes(if u r a beginner).</span>
+	</div>
+	<br/>
+	<hr/>
+	<br/>
+
+	<div class="options">
+		<br/>
+		<h3 class="tab">SPEED -   </h3>
+		<input type="range" min="1" max="100" value="50" id="speed" onchange="updatespeed();">
+		<input type="text" class="input" value="50" id="speedbox" onmouseout="updatespeedbar();">
+		<br/>
+		<br/>
+		<h3>LENGTH - </h3>
+		<input type="range" min="1" max="100" value="20" id = "length" onchange="updatelength();">
+		<input  type="text" class = "input" value="20" id="lengthbox" onmouseout="updatelengthbar();">
+		<br/>
+		<br/>
+		<h3 class = "tab2"> ALGO - </h3>
+		<select id="select" onchange="updatealgotype(this.value);">
+			<option value="MERGE SORT">MERGE SORT</option>
+			<option value="SELECTION SORT">SELECTION SORT</option>
+			<option value="BUBBLE SORT">BUBBLE SORT</option>
+			<option value="INSERTION SORT">INSERTION SORT</option>
+			<option value="QUICK SORT">QUICK SORT</option>
+		  </select>
+		  <br/>
+		  <br/>
+		  <h3 class = "tab4">MAX-Y - </h3>
+		<select id="select" onchange="updatemaxheight(this.value);">
+			<option value="1000">1000</option>
+			<option value="900">900</option>
+			<option value="800">800</option>
+			<option value="700">700</option>
+			<option value="600">600</option>
+			<option value="500">500</option>
+			<option value="400">400</option>
+			<option value="300">300</option>
+			<option value="200">200</option>
+			<option value="100">100</option>
+			
+		</select>
+		  <br/>
+		  <br/>
+		  <h3 class = "tab3"> DATA  - </h3>
+		  <input  type="text" class = "input2" value="1 , 2 , 5 , 4 , 3" id="array" onmouseout="forstarting();">
+		  <br/>
+		  <button id="button" onclick="generaterandomnums();">RANDOM</button>
+		  <br/>
+		  <br/>
+		  <button id="button2" onclick="startsorting()">START SORTING</button>
+		  <br/>
+		  <br/>
+	</div>
+	<div class = "sortheading">MERGE SORT</div>
+
+	<div id = "vernummain">
+		<div  id="v00">1</div>
+		<div  id="v01">1</div>
+		<div  id="v02">1</div>
+		<div  id="v03">1</div>
+		<div  id="v04">1</div>
+		
+	</div>
+	<canvas height = "410" width="900" class="main" id="main">	</canvas>
+	<div id="forrect" ></div>
+
+</body> 
+<script src="main.js"></script>
+</html>
