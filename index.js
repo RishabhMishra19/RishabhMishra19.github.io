@@ -1,4 +1,4 @@
-var len,lmt,spd,dta,algo,wdt,hgtf,dwdt=870,dhgt=400,dbtm=630,dlft=480 , grnhx='green',ylwhx='yellow',bluhx = 'blue',rdhx='red',bvhx='blueviolet';
+var len,lmt,spd,dta,algo,wdt,hgtf,dwdt=800,dhgt=400,dbtm=400,dlft=0 , grnhx='green',ylwhx='yellow',bluhx = 'blue',rdhx='red',bvhx='blueviolet';
 
 //function to assign every variable
 function assign(){
@@ -24,14 +24,14 @@ function display_lines(){
 	for(var i=0;i<len;i++){
 		var div = document.createElement('div');
 		div.setAttribute('id', i);
-		div.style.position = 'fixed';
+		div.style.position = 'absolute';
 		div.style.boxSizing = 'border-box';
 		div.style.left = `${dlft + i*wdt}px`;
 		div.style.width = `${wdt}px`;
-		div.style.height = `${Math.min(400,dta[i]*hgtf)}px`;
-		div.style.top = `${Math.max(dbtm-dta[i]*hgtf,230)}px`;
+		div.style.height = `${dta[i]*hgtf}px`;
+		div.style.top = `${dbtm-dta[i]*hgtf}px`;
 		div.style.background = ylwhx;
-		div.style.border = '1px solid white';
+		div.style.border = '1px solid black';
 		div.style.transition = `background ${spd*200 + 15}ms linear,left ${spd*700 + 30}ms linear,top ${spd*700 + 30}ms linear,width ${spd*700 + 30}ms linear,height ${spd*700 + 30}ms linear`;
 		k.appendChild(div);
 	}
@@ -81,6 +81,7 @@ document.getElementById('limitrange').addEventListener('change',function(){
 	hgtf = dhgt/lmt;
 	this.value = lmt;
 	document.getElementById('limitbox').value = this.value;
+	random_num();
 	change_line();
 	display_lines();
 })

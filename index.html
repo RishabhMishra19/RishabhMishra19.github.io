@@ -1,52 +1,63 @@
 <!DOCTYPE html> 
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>SORTING_VISUALIZER</title> 
 	<link rel = "stylesheet"  href="index.css">
 </head>
 <body onload="assign();">
 	<header><h1>FUN PROJECT</h1></header>
-
 	<hr>
 	<br/>
-	<div class="overview">
-	<h2>OVERVIEW - </h2>
-	<span> This is a sorting algo visualizer where you can control speed by given buttons as well as 
-		you can control amount of data .here you may generate random data or may enter your own 
-		data and can see where were you making mistakes(if u r a beginner).</br><span id='author'>AUTHOR -<span id='authorname'> Rishabh Mishra</span><span id='authorclg'>(NIT Kurukshetra)</span></span>
+	<div id='cmn'>
+		<div id = 'left'>
+			<div id='lefttop'>MERGE SORT</div>
+			<div class="leftheading" id='length'>
+				LENGTH
+				<input type="text"  value="20" id="lengthbox" class="box">
+				<input type="range" min="1" max="100" value="20" id="lengthrange">
+			</div>
+			<div class="leftheading"id='speed'>
+				SPEED
+				<input type="text"  value="90" id="speedbox" class="box">
+				<input type="range" min="1" max="100" value="90" id="speedrange">
+			</div>
+			<div class="leftheading" id='limit'>
+				LIMIT
+				<input type="text"  value="1000" id="limitbox" class="box">
+				<input type="range" min="1" max="1000" value="1000" id="limitrange">
+			</div>
+			<div class="leftheading" id='data'>
+				DATA
+				<input type="text"  value="" placeholder="length must be multiple of 5" id="databox">
+				<button id="button1" >RANDOM</button>
+			</div>
+			<div class="leftheading" id='algo'>
+				ALGO
+				<select id="select">
+					<option value="MERGE SORT">MERGE SORT</option>
+					<option value="SELECTION SORT">SELECTION SORT</option>
+					<option value="BUBBLE SORT">BUBBLE SORT</option>
+					<option value="INSERTION SORT">INSERTION SORT</option>
+					<option value="QUICK SORT">QUICK SORT</option>
+				</select>
+			</div>
+			<button id="button2" onclick="start_sorting(this);">START SORTING</button>
+		</div>
+		<div class="overview" id="ovr">
+		<h2>OVERVIEW</h2><br>
+		<span> This is a sorting algo visualizer where you can control speed by given buttons as well as 
+			you can control amount of data .here you may generate random data or may enter your own 
+			data and can see where were you making mistakes(if u r a beginner).</br><span id='author'>AUTHOR <br/><span id='authorname'> Rishabh Mishra</span><br/><span id='authorclg'>(NIT Kurukshetra)</span></span>
+		</div>
+			<div id='yaxis'>500</br>450</br>400</br>350</br>300</br>250</br>200</br>150</br>100</br>50</br>0<hr></div>
+			<div id='right'></div>
+		<div style="position: absolute;top: 950px;">
+			<hr>
+			<br/>
+			<br/>
+		</div>
 	</div>
-	
-	<hr/>
-	<br/>
-	<div id='lefttop'>MERGE SORT</div>
-	<div id = 'left'>
-		<div id='vl'></div>
-		<div class="leftheading" id='length'>LENGTH</div>
-		<div class="leftheading"id='speed'>SPEED</div>
-		<div class="leftheading" id='limit'>LIMIT</div>
-		<div class="leftheading" id='data'>DATA</div>
-		<div class="leftheading" id='algo'>ALGO</div>
-		<input type="range" min="1" max="100" value="20" id="lengthrange">
-		<input type="text"  value="20" id="lengthbox" class="box">
-		<input type="range" min="1" max="100" value="90" id="speedrange">
-		<input type="text"  value="90" id="speedbox" class="box">
-		<input type="range" min="1" max="1000" value="1000" id="limitrange">
-		<input type="text"  value="1000" id="limitbox" class="box">
-		<input type="text"  value="" placeholder="length must be multiple of 5" id="databox">
-		<select id="select">
-			<option value="MERGE SORT">MERGE SORT</option>
-			<option value="SELECTION SORT">SELECTION SORT</option>
-			<option value="BUBBLE SORT">BUBBLE SORT</option>
-			<option value="INSERTION SORT">INSERTION SORT</option>
-			<option value="QUICK SORT">QUICK SORT</option>
-		  </select>
-		  <button id="button1" >RANDOM</button>
-		  <button id="button2" onclick="start_sorting(this);">START SORTING</button>
-	</div>
-	<div id='yaxis'>500</br>450</br>400</br>350</br>300</br>250</br>200</br>150</br>100</br>50</br>0</div>
-	<div id='right'></div>
-
 </body>
 <script src="index.js"></script>
 <script src="merge.js"></script>
