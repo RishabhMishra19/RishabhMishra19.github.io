@@ -32,7 +32,7 @@ function display_lines(){
 		div.style.top = `${dbtm-dta[i]*hgtf}px`;
 		div.style.background = ylwhx;
 		div.style.border = '1px solid black';
-		div.style.transition = `background ${spd*200 + 15}ms linear,left ${spd*700 + 30}ms linear,top ${spd*700 + 30}ms linear,width ${spd*700 + 30}ms linear,height ${spd*700 + 30}ms linear`;
+		div.style.transition = `background ${spd*200 + 25}ms linear,left ${spd*700 + 60}ms linear,top ${spd*700 + 30}ms linear,width ${spd*700 + 30}ms linear,height ${spd*700 + 30}ms linear`;
 		k.appendChild(div);
 	}
 }
